@@ -24,3 +24,37 @@ Mode                 LastWriteTime         Length Name
 -a----        10/28/2020   8:07 PM             39 README.md
 
 7. .\pertama.exe cara eksekusi klo udah di build jadiin .exe
+
+8. misal dalam satu package main ada dua file / function berbeda artinya masih dalam 
+   satu package main tp beda function itu bisa caranya :
+
+   - ini file main.go
+   package main
+
+import "fmt"
+
+func main() {
+	fmt.Println("Hello World")
+	//cara panggil function yg masih sama2 1 pacake yaitu package main
+	kalimat := TestAja()
+
+	fmt.Println(kalimat)
+}
+
+- ini file entity.go
+
+package main
+
+import (
+	"fmt"
+)
+
+func TestAja() string {
+	return fmt.Sprintf("Halo nama saya %s dan umur saya %d", "utha", 20)
+}
+
+Cara run nya go run main.go entity.go 
+outputnya :
+
+Hello World
+Halo nama saya utha dan umur saya 20
