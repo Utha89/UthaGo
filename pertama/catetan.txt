@@ -1,0 +1,11 @@
+
+1. daftarin go mod init nama_project kita
+2. saat pertama kali function main yah guys
+
+func main() {
+	fmt.Println("Hello World")
+}
+
+nanti dia otomatis lagsung buat package sendiri
+
+3. fmt buat perintah cetak ada Println ada printf dsb
