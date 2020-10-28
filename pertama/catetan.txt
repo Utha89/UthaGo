@@ -9,3 +9,18 @@ func main() {
 nanti dia otomatis lagsung buat package sendiri
 
 3. fmt buat perintah cetak ada Println ada printf dsb
+
+4. untuk jalani go run main.go
+
+5. go build untuk ngebuild suatu project
+
+6. ls atau bisa dengan ls -l untuk informasi path 
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/28/2020   8:18 PM            323 catetan.txt
+-a----        10/28/2020   6:59 PM             24 go.mod
+-a----        10/28/2020   8:02 PM             86 main.go
+-a----        10/28/2020   8:07 PM             39 README.md
+
+7. .\pertama.exe cara eksekusi klo udah di build jadiin .exe
