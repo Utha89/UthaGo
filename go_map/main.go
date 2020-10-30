@@ -25,4 +25,24 @@ func main() {
 	myGame := map[int]string{1: "PS3", 2: "PS5", 3: "PS1"}
 	fmt.Println(myGame)
 
+	//inget klo vertikal pake koma di trakhirnya
+	myGame2 := map[int]string{
+		1: "PS3",
+		2: "PS5",
+		3: "PS1",
+	}
+	fmt.Println(myGame2)
+
+	//for each di map
+	for key, result := range myGame2 {
+		fmt.Println("key nya =", key, "valuenya =", result)
+	}
+
+	fmt.Println("======================================")
+	//delete di map dengan keynya
+	delete(myGame2, 1)
+	//for each di map
+	for key, result := range myGame2 {
+		fmt.Println("key nya =", key, "valuenya =", result)
+	}
 }
