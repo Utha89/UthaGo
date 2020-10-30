@@ -28,4 +28,47 @@ func main() {
 	for _, result := range student {
 		fmt.Println(result["name"], "-", result["score"])
 	}
+
+	fmt.Println("+++++++++++++++++++++++Kuiz 1 mencari nilai rata2 rumusnya kan total data /sum(data)++++++++++")
+
+	//kuiss
+	//1. mencari nilai rata2 rumusnya kan total data /sum(data)
+	//total datanya = 8
+	//sum(100+80+75 dst)
+
+	//ini array
+	scores := [...]int{100, 80, 75, 92, 70, 93, 88, 67}
+	length := len(scores)
+
+	//suatu variabel
+	var tampung int
+
+	//ini for each
+	for _, result := range scores {
+		tampung = tampung + result
+	}
+
+	average := float64(tampung) / float64(length)
+	fmt.Println(average)
+
+	fmt.Println("+++++++++++++++++++++++Kuiz 2++++++++++")
+
+	//kuiss 2
+	//memasukkan suatu data > 90 kedalem variabel
+
+	//ini array
+	scores2 := [...]int{100, 80, 75, 92, 70, 93, 88, 67}
+	//ini slice
+	var goodScores []int
+
+	//ini for each
+	for _, data := range scores2 {
+		if data >= 90 {
+			//bikin slice baru
+			goodScores = append(goodScores, data)
+		}
+
+	}
+
+	fmt.Println(goodScores)
 }
