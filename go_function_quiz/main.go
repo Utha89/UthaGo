@@ -10,6 +10,7 @@ func main() {
 	total := sum(numbers)
 	fmt.Println(total)
 
+	fmt.Println("+++++++++++Quiz2+++++++")
 	//+++++++++++Quiz 2 +++++//
 	//knpa result, err ini liat dr function calculate yg ouputnya minta int dan error maknnya result, err
 	//function calculate(parameternya => 10, 2, "+")
@@ -38,8 +39,11 @@ func sum(numbers []int) int {
 //kuis ke dua ialah ngecek proses dr function calculasi itu berupa penjumlahan, pengurangan , perkalian atau pembagian
 //jika tak ada di salah satunya muncul error
 //jd funtion yg ada parameter untuk inputan angkanya dan kata2 errornya
-//dimna output berupa int (hasil calculate) dan error (pesan erro)
+//dimna output berupa int (hasil calculate) dan error (pesan error)
 
+//1.berupa inputan => calculate(number, numbers int, info string)
+//2. brupa proses switch info {case,default}
+//3. berupa output => (int, error)
 func calculate(number, numbers int, info string) (int, error) {
 
 	//variabel tampung
