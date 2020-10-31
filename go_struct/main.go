@@ -40,4 +40,19 @@ func main() {
 
 	fmt.Println(user)
 	fmt.Println(user2.FisrtName)
+
+	fmt.Println("+++++++++++++++Method yg panggil model++++++++++++")
+	data :=getData(user)
+	data2 :=getData(user2)
+	fmt.Println(data)
+	fmt.Println(data2)
+
+}
+
+
+//Disini kita panggil model / struct dr suatu function
+
+func getData(user User) string {
+	result :=fmt.Sprintf("Name : %s %s, Email : %s ", user.FisrtName, user.LastName, user.Email)
+	return result
 }
