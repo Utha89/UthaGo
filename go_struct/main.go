@@ -25,7 +25,7 @@ type Group struct{
 func main() {
 	//cara panggil model bikin variabel dan nama modelnya
 	user :=User{ID:1,FisrtName:"Utha",LastName:"Ganteng",Email:"a@yahuu.com",IsActive:true}
-	user2 :=User{ID:1,FisrtName:"Utha",LastName:"Ganteng",Email:"a@yahuu.com",IsActive:true}
+	user2 :=User{ID:1,FisrtName:"Kintana",LastName:"Ganteng",Email:"a@yahuu.com",IsActive:true}
 	// user.ID=1
 	// user.FisrtName="Utha"
 	// user.LastName="ganteng"
@@ -79,10 +79,12 @@ func getDataAll(group Group)  {
 	fmt.Printf("Name : %s", group.Name)
 	fmt.Println("")
 	fmt.Printf("Member Count : %d", len(group.Users))
+	fmt.Println("")
 	// kan td di gruop modelnya slice / map yak yg property nya 
 	//Users yaitu kumpulan [] dr user maka kita bisa di for each
 	 for _,hasil:=range group.Users{
-		 fmt.Println("User By Group :")
+	
+		 fmt.Println("")
 		 fmt.Printf(hasil.FisrtName)
 	 }
 
