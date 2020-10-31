@@ -62,7 +62,12 @@ func main() {
 	group :=Group{"Gamer", user, usersAll, true}
 
 	//Pangil function getDataAll
+	//ini skema struct function ada parameter 
 	getDataAll(group)
+
+
+	//quiz mangggil sebuah struct yg skemanya function ada method dimna keluarin data yg di model ada modelnya lg
+	group.getDataAllMethod()
 
 }
 
@@ -76,7 +81,24 @@ func getData(user User) string {
 
 //funct untuk model yg dalemnya ada model lg
 func getDataAll(group Group)  {
-	fmt.Printf("Name : %s", group.Name)
+	fmt.Printf("ini struct function pakai parameter,Name : %s", group.Name)
+	fmt.Println("")
+	fmt.Printf("Member Count : %d", len(group.Users))
+	fmt.Println("")
+	// kan td di gruop modelnya slice / map yak yg property nya 
+	//Users yaitu kumpulan [] dr user maka kita bisa di for each
+	 for _,hasil:=range group.Users{
+	
+		 fmt.Println("")
+		 fmt.Printf(hasil.FisrtName)
+	 }
+
+	
+	//next ke main lg panggil si function getDataAll
+}
+
+func(group Group) getDataAllMethod()  {
+	fmt.Printf("ini struct function pakai method, Name : %s", group.Name)
 	fmt.Println("")
 	fmt.Printf("Member Count : %d", len(group.Users))
 	fmt.Println("")
